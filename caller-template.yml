@@ -24,6 +24,7 @@ jobs:
       id-token: write
       actions: read
     # Permitted tools (set in teunispolak/claude-workflow):
-    # - Bash(gh issue create *) — Claude can create issues when instructed
+    # - Bash(gh issue create *) — Claude can create issues via CLI
+    # - mcp__github__create_issue — Claude can create issues via MCP tool
     uses: teunispolak/claude-workflow/.github/workflows/claude.yml@main
     secrets: inherit
