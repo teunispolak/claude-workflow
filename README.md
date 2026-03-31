@@ -6,6 +6,8 @@ Reusable GitHub Actions workflow for Claude Code (`@claude`) integration.
 
 A public repo hosting a reusable `claude.yml` workflow. Any repo can delegate to it via `uses:`, so updates propagate automatically without copying files.
 
+Mention `@claude` in an issue or PR comment and Claude will read the context, reply in a comment, and create issues when instructed.
+
 ## Prerequisites
 
 - **Claude Code GitHub Actions app installed** on your account or organisation.
