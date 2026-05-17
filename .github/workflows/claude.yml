@@ -26,7 +26,6 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          model: claude-sonnet-4-6
           additional_permissions: |
             actions: read
-          claude_args: '--allowedTools "Bash(gh issue create *)" "mcp__github__create_issue"'
+          claude_args: '--model claude-sonnet-4-6 --allowedTools "Bash(gh issue create *)" "mcp__github__create_issue"'
